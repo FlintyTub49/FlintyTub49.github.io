@@ -135,6 +135,12 @@ body {
   background: var(--bg-alt);
 }
 
+/* Nav menu default */
+.nav {
+  display: flex;
+  gap: 0.8rem;
+}
+
 /* Desktop nav (flex horizontal) */
 .nav ul {
   display: flex;
@@ -145,56 +151,67 @@ body {
 
 /* Mobile styles */
 @media (max-width: 560px) {
+  /* Show hamburger */
   .hamburger {
     display: block;
   }
 
+  /* Hide desktop nav */
   .nav {
-    display: none; /* hide menu by default */
+    display: none; /* hidden by default */
     position: absolute;
     top: 100%;
     right: 0;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(10px);
-    width: 200px;
+    width: 220px; /* adjust as needed */
+    background: var(--bg-alt);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
-
-  .nav {
-    background: var(--bg-alt);
-    transition: background 0.3s, color 0.3s;
-  }
-
-  .nav a, .nav button {
-    color: var(--text);
-    transition: color 0.3s, background 0.3s;
-  }
-
-  /* Dark mode */
-  [data-theme="dark"] .nav {
-    background: var(--bg-alt); /* dark mode background */
-  }
-
-  [data-theme="dark"] .nav a,
-  [data-theme="dark"] .nav button {
-    color: var(--text); /* dark mode text */
-  }
-
-  .nav ul {
     flex-direction: column;
-    gap: 0;
-  }
-
-  .nav ul li a, .nav ul li button {
-    display: block;
-    padding: 0.8rem 1rem;
-    width: 100%;
+    padding: 0.5rem 0;
+    z-index: 1000;
   }
 
   /* Show menu when active */
   .nav.active {
+    display: flex;
+  }
+
+  /* Stack menu items vertically */
+  .nav ul {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav ul li {
+    width: 100%;
+  }
+
+  /* Links inside menu */
+  .nav ul li a,
+  .nav ul li button {
     display: block;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: background 0.2s, color 0.3s;
+  }
+
+  /* Hover effect */
+  .nav ul li a:hover,
+  .nav ul li button:hover {
+    background: var(--bg);
+  }
+
+  /* Dark mode */
+  [data-theme="dark"] .nav {
+    background: var(--bg-alt);
+  }
+  [data-theme="dark"] .nav ul li a,
+  [data-theme="dark"] .nav ul li button {
+    color: var(--text);
   }
 }
 
