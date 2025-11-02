@@ -1,447 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
-  
-  <title>Personal Portfolio</title>
-
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-
-  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Arth Akhouri — Data Scientist</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body class="theme-blue">
-  
-  <div class="vg-page page-home" id="home" style="background-image: url('assets/img/cover2.png');">
-    <!-- Navbar -->
-    <div class="navbar navbar-expand-lg navbar-dark sticky">
-      <div class="container">
-        <a href="" class="navbar-brand">Personal Website</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
-          <span class="ti-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
-            </li>
+
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/person2.jpg" alt="Logo" width="36" height="36"/>
+        <span class="brand-text">Arth Akhouri</span>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" title="Toggle theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <!-- <section class="hero" id="top">
+    <div class="hero-content">
+      <div class="hero-left">
+        <img src="assets/img/person2.jpg" alt="Jane Doe" class="hero-photo"/>
+        <h1>Hi, I'm Arth Akhouri</h1>
+        <p class="hero-sub">Data Engineer • Analyst • Model Builder</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn primary">Learn More</a>
+          <a href="resume.pdf" download class="btn outline">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- 🏔️ HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <img src="assets/img/person2.jpg" alt="Jane Doe" class="hero-photo"/>
+
+      <div class="hero-text">
+        <h1>Hi, I'm Arth Akhouri</h1>
+        <p class="hero-sub">Data Engineer • Analyst • Model Builder</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn primary">Learn More</a>
+          <a href="resume.pdf" download class="btn outline">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section container fade-in" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-card card">
+      <p>I am a data-driven and results-oriented Data Scientist with extensive experience in data integration, analytics, and machine learning. Skilled in Python, SQL, Databricks, and cloud platforms (GCP, AWS), with a proven track record of automating workflows, optimising reporting pipelines, and delivering actionable insights across diverse industries. Passionate about leveraging AI, NLP, and computer vision to solve complex business problems and enhance operational efficiency.</p>
+      <p>
+        Whether you're looking to collaborate on a project, discuss work opportunities, or simply have a meaningful conversation, I'm always open to connecting and exchanging ideas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section container fade-in" id="skills">
+    <h2 class="section-title">What Can I Do?</h2>
+    <div class="skills-grid">
+      <div class="card card-skills"><h3>Visualisations</h3><p>I can present your data in a beautiful manner which is also easy to understand</p></div>
+      <div class="card card-skills"><h3>Analysis</h3><p>Help you better understand your data by performing thorough analysis of it</p></div>
+      <div class="card card-skills"><h3>Automation</h3><p>Bored of doing a repetitive task? Let me help write scripts to automate it for you</p></div>
+      <div class="card card-skills"><h3>Model Building</h3><p>Browse multiple models and help you create and train that model for your task</p></div>
+      <!-- <div class="card card-skills"><h3>Machine Learning</h3><p>Regression, classification, clustering, NLP.</p></div>
+      <div class="card card-skills"><h3>Data Engineering</h3><p>ETL pipelines, SQL, Airflow, dbt, Snowflake.</p></div>
+      <div class="card card-skills"><h3>Visualization</h3><p>Power BI, Plotly, Tableau, storytelling.</p></div>
+      <div class="card card-skills"><h3>Programming</h3><p>Python, R, JavaScript, Git, APIs.</p></div> -->
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section container fade-in" id="experience">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="timeline">
+
+      <!-- First Org -->
+      <div class="timeline-item card">
+        <div class="timeline-top">
+          <img src="assets/img/work/Mondelez.png" alt="Org logo" class="org-logo"/>
+          <div>
+            <h3>Data Integration Analyst — Mondelēz International</h3>
+            <span class="timeline-date">Sep 2024 – Present</span>
+          </div>
+        </div>
+        <p>Leading migration of OTIF reporting to Google Cloud with automated Databricks workflows and analytics optimisation, improving scalability, cutting reporting time by 97%, and reducing costs.</p>
+        <button class="toggle-btn">More details ▾</button>
+        <div class="toggle-content">
+          <ul>
+            <li>Leading the migration of On-Time In-Full reporting from Alteryx to Google Cloud Platform, integrating data from SAP and manual sources via Talend pipelines and Aecorsoft, improving scalability and reducing manual errors.</li>
+            <li>Engineered an automated SKU Rationalisation workflow in Databricks with Unity Catalog governance, reducing report generation time by ∼97% (50+ hours → ∼30 minutes) and enabling quicker SKU tracking across supply chain teams.</li>
+            <li>Analysed the use of 30+ analytics products, generating detailed insights about adoptions and recommending discontinuation to optimise eﬀiciency and reduce costs.</li>
           </ul>
         </div>
       </div>
-    </div> <!-- End Navbar -->
-    <!-- Caption header -->
-    <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Welcome</h5>
-      <h1 class="fw-light mb-4">I'm <b class="fg-theme">Arth</b> Akhouri</h1>
-      <div class="badge">Data Scientist</div>
-    </div> <!-- End Caption header -->
-  </div>
-  
-  <div class="vg-page page-about" id="about">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-4 py-3">
-          <div class="img-place wow fadeInUp">
-            <img src="assets/img/person2.jpg" alt="">
+
+      <!-- Second Org -->
+       <div class="timeline-item card">
+        <div class="timeline-top">
+          <img src="assets/img/work/eclerx.jpg" alt="Org logo" class="org-logo"/>
+          <div>
+            <h3>Associate Process Manager — eClerx</h3>
+            <span class="timeline-date">Jan 2022 – Jun 2023</span>
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
-          <h1 class="fw-light">Arth Akhouri</h1>
-          <h5 class="fg-theme mb-3">Data Scientist</h5>
-          <p class="text-muted">I have a Masters's degree in Data Science and I am currently working for Mondelēz International as a data analyst/scientist. Whether you're looking to collaborate on a project, discuss work opportunities, or simply have a meaningful conversation, I'm always open to connecting and exchanging ideas.</p>
-          <ul class="theme-list">
-            <li><b>From:</b> Thane, Mumbai, India</li>
-            <li><b>Lives In:</b> Birmingham, England, United Kingdom</li>
-            <li><b>Age:</b> 25</li>
-          </ul>
-          <a href="https://drive.google.com/uc?=export&id=1gERcQtJ3nbXizJIheu59Wv7xm8w3ZBhe" download>
-            <button class="btn btn-theme-outline">Download Resume</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-md-6 wow fadeInRight">
-          <h2 class="fw-normal">Experience</h2>
-            <ul class="timeline mt-4 pr-md-5">
-              <li>
-                <div class="title">September 2024 - Ongoing</div>
-                <div class="details">
-                  <h5>Mondelēz International</h5>
-                  <small class="fg-theme">Data Integration Analyst<br>Data & Analytics Intern</small>
-                  <p>I lead the migration of On-Time In-Full reporting from Alteryx to Google Cloud Platform, integrating data from SAP and other manual sources to improve scalability and reduce errors. I engineered automated SKU rationalisation in Databricks, cutting reporting time by 97 percent, and analysed 30 analytics products to enhance adoption and reduce costs.</p>
-                </div>
-              </li>
-              <li>
-                <div class="title">January 2022 - June 2023</div>
-                <div class="details">
-                  <h5>eClerx</h5>
-                  <small class="fg-theme">Associate Process Manager<br>Data Analytics Intern</small>
-                  <p>I developed an end-to-end ETL pipeline in Databricks to deliver a Traffic Analytics dashboard, using SQL, Python and Matplotlib for data transformation and visualisation. I boosted client website traffic by leveraging keyword search insights from Adobe Analytics and automated reporting with Python, reducing production time from 2.5 days to just 6 hours.</p>
-                </div>
-              </li>
-              <li>
-                <div class="title">December 2021 - May 2022</div>
-                <div class="details">
-                  <h5>AVL</h5>
-                  <small class="fg-theme">Data Science Intern</small>
-                  <p>I analyzed Time Series Electrical data generated by various machines in an IIOT system to identify inefficiencies. Using Plotly, I created visualizations of machine parameters with a focus on energy consumption. Additionally, I applied statistical and machine learning techniques to determine a threshold safety value for a specific machine.</p>
-                </div>
-              </li>
-              <li>
-                <div class="title">September 2021 - March 2022</div>
-                <div class="details">
-                  <h5>AkzoNobel</h5>
-                  <small class="fg-theme">Data Science Intern</small>
-                  <p>I collected extensive color recipe data and linked it to identify different toners corresponding to specific colors. Utilizing various Machine Learning (ML) and Deep Learning (DL) models, I developed methods to detect colors based on their reflection values. Additionally, I leveraged these models to generate new recipes for solid colors using fewer base colors, optimizing the formulation process.</p>
-                </div>
-              </li>
-            </ul>
-        </div>
-        <div class="col-md-6 wow fadeInRight" data-wow-delay="100ms">
-          <h2 class="fw-normal">Education</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">September 2023 - August 2024</div>
-              <div class="details">
-                <h5>M.Sc. in Data Science</h5>
-                <small class="fg-theme">The University of Edinburgh</small>
-                <p>Building on top of the knowledge gained in my undergraduate degree and delving into more advanced concepts in the field. Keeping an organised and detail-oriented approach helps in managing all the course load simultaneously helping me grow as in individual. Effectively utilising knowledge from various domains to implement the projects efficiently.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">July 2018 - August 2022</div>
-              <div class="details">
-                <h5>B.Tech. in Data Science</h5>
-                <small class="fg-theme">Mukesh Patel School of Technology Management and Engineering, NMIMS</small>
-                <p>Gained foundational knowledge about the field of data science. Started with preliminary concepts and climbed up to more complex algorithms. Reinforcing the theoretical knowledge gained with practical applications. Worked on various projects across different domains of Data Science.</p>
-              </div>
-            </li>
+        <p>Developed an end-to-end Databricks ETL and analytics workflow leveraging SQL, Python, and Adobe Analytics to boost website traffic and automate reporting, reducing production time by 90%.</p>
+        <button class="toggle-btn">More details ▾</button>
+        <div class="toggle-content">
+          <ul>
+            <li>Developed an end-to-end ETL pipeline in Databricks to generate a comprehensive dashboard for Traﬀic Analytics, utilising tools like SQL for data manipulation and Python and Matplotlib for visualisations.</li>
+            <li>Leveraged keyword search data to increase client website traﬀic, applying insights from Adobe Analytics and custom Python workflows to optimise content performance and user acquisition.</li>
+            <li>Automated Traﬀic Analytics report generation using Python, cutting production time from 2.5 days to 6 hours.</li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="container py-5">
-      <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
-      <div class="row py-3">
-        <div class="col-md-6">
-          <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Coding</h4>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Python</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">100%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">R</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">HTML + CSS</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">55%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">C/C++</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">30%</div>
-              </div>
-            </div>
+      
+      <!-- Third Org -->
+       <div class="timeline-item card">
+        <div class="timeline-top">
+          <img src="assets/img/work/avl.png" alt="Org logo" class="org-logo-avl"/>
+          <div>
+            <h3>Data Science Intern — AVL<h3>
+            <span class="timeline-date">Dec 2021 – May 2022</span>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Conceptual</h4>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Data Analytics</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">92%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Data Visualisation</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 84%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">84%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Machine/Deep Learning</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">95%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Computer Vision</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
-              </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Natural Language Processing</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">89%</div>
-              </div>
-            </div>
-          </div>
+        <p>Analysed IIoT time series data using Python and machine learning to optimise energy efficiency, enhance operational insights with interactive visualisations, and establish safety thresholds for machinery.</p>
+        <button class="toggle-btn">More details ▾</button>
+        <div class="toggle-content">
+          <ul>
+            <li>Analysed time series electrical data from 3 IIOT ecosystems to identify ineﬀiciencies and optimise energy consumption using Python and statistical methods.</li>
+            <li>Created 20+ interactive visualisations using Plotly to illustrate individual machine parameters, focusing on energy consumption and operational performance.</li>
+            <li>Employed machine learning techniques to establish threshold safety values for machinery, ensuring maintenance and safety.</li>
+          </ul>
         </div>
-      </div>
-    </div>
-  
-  <div class="vg-page page-service">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Service</div>
-      </div>
-      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
-      <div class="row mt-5">
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-paint-bucket"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Visualisations</h4>
-              <p>I can present your data in a beautiful manner which is also easy to understand</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-search"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Analysis</h4>
-              <p>Help you better understand your data by performing thorough analysis of it</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-vector"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Automation</h4>
-              <p>Bored of doing a repetitive task? Let me help write scripts to automate it for you</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-desktop"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Model Building</h4>
-              <p>Browse multiple models and help you create and train that model for your task</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Portfolio page -->
-  <div class="vg-page page-portfolio" id="portfolio">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Portfolio</div>
-      </div>
-      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
-      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".db">Database</button>
-        <button class="btn btn-theme-outline" data-filter=".mldl">ML/DL</button>
-        <button class="btn btn-theme-outline" data-filter=".cv">CV</button>
-        <button class="btn btn-theme-outline" data-filter=".nlp">NLP</button>
-        <button class="btn btn-theme-outline" data-filter=".vis">Visualisations</button>
-        <button class="btn btn-theme-outline" data-filter=".front">Front-end</button>
-        <button class="btn btn-theme-outline" data-filter=".bigd">Big Data</button>
-        <button class="btn btn-theme-outline" data-filter=".llm">LLMs</button>
       </div>
 
-      <div class="gridder my-3">
-        <div class="grid-item mldl mldl nlp llm bigd wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/kg.png" data-caption="<h5 class='fg-theme'>LLM-Driven Knowledge Graph Completion</h5> <p>Machine & Deep Learning, Natural Language Processing, Large Language Model, Big Data</p>">
-            <img src="assets/img/work/kg.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://github.com/FlintyTub49/augmentation-diss" target="_blank">LLM-Driven KG Completion</a></h5>
-              <p>Use LLM to augment data in KG for KGC</p>
-            </div>
+      <!-- Fourth Org -->
+       <div class="timeline-item card">
+        <div class="timeline-top">
+          <img src="assets/img/work/akzo.jpg" alt="Org logo" class="org-logo"/>
+          <div>
+            <h3>Data Science Intern — AkzoNobel</h3>
+            <span class="timeline-date">Sep 2021 – Mar 2022</span>
           </div>
         </div>
-        <div class="grid-item mldl cv wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/xray.png" data-caption="<h5 class='fg-theme'>X-ray Image Denoising</h5> <p>Machine & Deep Learning, Computer Vision</p>">
-            <img src="assets/img/work/xray.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://github.com/FlintyTub49/MLP_Sem2" target="_blank">X-ray Image Denoising</a></h5>
-              <p>Fix distored X-ray images</p>
-            </div>
-          </div>
+        <p>Developed and optimised ML/DL models for colour detection and recipe optimisation, improving colour matching accuracy and reducing base colours required from 4–6 to 2–3 for greater resource efficiency.</p>
+        <button class="toggle-btn">More details ▾</button>
+        <div class="toggle-content">
+          <ul>
+            <li>Collected and integrated large datasets of colour recipes to identify different toners, leveraging data pre-processing techniques.</li>
+            <li>Built and optimised machine learning (ML) and deep learning (DL) models to accurately detect colours based on reflection values, improving colour matching accuracy.</li>
+            <li>Developed ML/DL models to optimise colour recipes, reducing base colours required from 4-6 to 2-3, enhancing resource eﬀiciency in recreating a colour.</li>
+          </ul>
         </div>
-        <div class="grid-item cv, front wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/docscan.png" data-caption="<h5 class='fg-theme'>Document Scanner with OCR</h5> <p>Computer Vision, Front-end</p>">
-            <img src="assets/img/work/docscan.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://github.com/FlintyTub49/DocumentScannerWtihOCR" target="_blank">Document Scanner with OCR</a></h5>
-              <p>Document scanner with in-built OCR</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item mldl front bigd wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/music.png" data-caption="<h5 class='fg-theme'>Music Recommender System</h5> <p>Machine & Deep Learning, Front-end, Big Data</p>">
-            <img src="assets/img/work/music.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://github.com/FlintyTub49/MusicRecommender" target="_blank">Music Recommender</a></h5>
-              <p>Music recommender based on genre</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item mldl nlp vis front wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/covid.png" data-caption="<h5 class='fg-theme'>COVID-19 Fake News Detector Bot</h5> <p>Machine & Deep Learning, Natural Language Processing, Visualisation, Front-end</p>">
-            <img src="assets/img/work/covid.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://github.com/FlintyTub49/Fake-News-Detector-Bot-" target="_blank">Fake News Detector</a></h5>
-              <p>COVID-19 Fake News Detector Bot</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item db mldl nlp vis front bigd wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/recommend.png" data-caption="<h5 class='fg-theme'>Medium Article Recommendation System</h5> <p>Machine & Deep Learning, Natural Language Processing, Visualisation, Front-end, Big Data</p>">
-            <img src="assets/img/work/recommend.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://github.com/FlintyTub49/Medium-Article-Recommender" target="_blank">Medium Article Recommender</a></h5>
-              <p>Article recommender based on topics</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item mldl wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/maha.png" data-caption="<h5 class='fg-theme'>MAHA Python Package</h5> <p>Machine & Deep Learning</p>">
-            <img src="assets/img/work/maha.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://pypi.org/project/MAHA/" target="_blank">MAHA Python Package</a></h5>
-              <p>One step ETL for basic datasets</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item db wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/local.png" data-caption="<h5 class='fg-theme'>Local-Train Ticketing System</h5> <p>Databases</p>">
-            <img src="assets/img/work/local.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="" target="_blank">Local-Train Ticketing System</a></h5>
-              <p>A revised ticketing system for local trains</p>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End gridder -->
-    </div>
-  </div> <!-- End Portfolio page -->
-  
-  <!-- Footer -->
-  <div class="vg-footer" id="contact">
-    <div class="container-fluid">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Contact</div>
       </div>
-      <h1 class="text-center fw-normal wow fadeInUp">Get in touch</h1>
+
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 py-3">
-          <div class="footer-info">
-            <p>Where to find me</p>
-            <hr class="divider">
-            <p class="fs-large fg-white">Birmingham, England, United Kingdom</p>
+  </section>
+
+  <!-- Education -->
+  <section class="section container fade-in" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+        <!-- Masters -->
+        <div class="timeline-item card">
+        <div class="timeline-top">
+            <img src="assets/img/education/edinburgh.png" alt="University logo" class="org-logo"/>
+            <div>
+                <h3>M.Sc. Data Science — School of Informatics, The University of Edinburgh</h3>
+                <span class="timeline-date">2023 — 2024</span>
+            </div>
+            </div>
+            <p>Building on top of the knowledge gained in my undergraduate degree and delving into more advanced concepts in the field. Keeping an organised and detail-oriented approach helps in managing all the course load simultaneously helping me grow as in individual. Effectively utilising knowledge from various domains to implement the projects efficiently.</p>
+            <button class="edu-btn">Courses Taken ▾</button>
+            <div class="toggle-content">
+              <ul>
+                <li>Machine & Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Big Data</li>
+                <li>Large Language Models</li>
+                <li>Knowledge Graphs</li>
+                <li>Financial Analytics</li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- Bachelors -->
+        <div class="timeline-item card">
+            <div class="timeline-top">
+            <img src="assets/img/education/nmims.png" alt="University logo" class="org-logo"/>
+            <div>
+                <h3>B. Tech. Data Science — MPSTME, Narsee Monjee Institute of Management Studies</h3>
+                <span class="timeline-date">2018 — 2022</span>
+            </div>
+            </div>
+            <p>Gained foundational knowledge about the field of data science. Started with preliminary concepts and climbed up to more complex algorithms. Reinforcing the theoretical knowledge gained with practical applications. Worked on various projects across different domains of Data Science.</p>
+            <button class="edu-btn">Courses Taken ▾</button>
+            <div class="toggle-content">
+              <ul>
+                <li>Statistics Methods</li>
+                <li>Data Visualisation</li>
+                <li>Machine & Deep Learning</li>
+                <li>Computer Vision</li>
+                <li>Natural Language Processing</li>
+                <li>Big Data</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section container fade-in" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid" id="projects-list">
+        
+      <!-- <div class="project-card card">
+        <img src="assets/images/project1.jpg" alt="Project 1" class="project-thumb"/>
+        <div class="project-body">
+          <h3>Customer Churn Prediction</h3>
+          <p>Built an ML model to predict customer churn and improve retention strategies.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Streamlit</span>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Follow me</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li><a href="https://www.linkedin.com/in/arth-akhouri/">LinkedIn</a></li>
-              <li><a href="https://github.com/FlintyTub49">GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Contact me</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li>akhouriarth@gmail.com</li>
-              <li>+44 7767 961 741</li>
-            </ul>
-          </div>
-        </div>
+      </div>-->
+      
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section container fade-in" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-card">
+      <!-- <p>Let's collaborate! Reach me at <a href="mailto:akhouriarth@gmail.com">akhouriarth@gmail.com</a> or connect via LinkedIn.</p> -->
+      <div class="contact-actions">
+        <!-- Email Button -->
+        <a href="mailto:akhouriarth@gmail.com" class="btn contact-btn email-btn">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M12 13.065L1.5 6.75V18h21V6.75L12 13.065zM12 11.25L22.5 4.5H1.5L12 11.25z"/>
+          </svg>
+          Email
+        </a>
+
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/arth-akhouri/" class="btn contact-btn linkedin-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5
+                    C24 2.239 21.761 0 19 0zM7 19H4V9h3v10zM5.5 7.732C4.534 7.732 3.75 6.943 3.75 5.97
+                    3.75 4.998 4.534 4.21 5.5 4.21s1.75.789 1.75 1.762c0 .973-.784 1.76-1.75 1.76zM20 19h-3v-5.604
+                    c0-1.337-.025-3.057-1.864-3.057-1.865 0-2.151 1.455-2.151 2.962V19h-3V9h2.881v1.367h.041
+                    c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 1.998 3.597 4.59V19z"/>
+          </svg>
+          LinkedIn
+        </a>
+
+        <!-- GitHub Button -->
+        <a href="https://github.com/FlintyTub49" class="btn contact-btn github-connect" target="_blank">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="currentColor" width="18" height="18">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
+              2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+              1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+              0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2.01-.27 
+              c.68 0 1.36.09 2.01.27 1.53-1.03 2.2-.82 2.2-.82 
+              .44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 
+              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 
+              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+              8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
       </div>
     </div>
-  </div> <!-- End footer -->
-  
-  
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-    
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-    
-  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-    
-  <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    
-  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
-    
-  <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-    
-  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+  </section>
 
-  <script src="assets/vendor/wow/wow.min.js"></script>
-
-  <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
-
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-  <script src="assets/js/google-maps.js"></script>
-    
-  <script src="assets/js/topbar-virtual.js"></script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
-  
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Arth Akhouri • Data Scientist • United Kingdom</p>
+  </footer>
 </body>
 </html>
