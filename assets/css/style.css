@@ -119,11 +119,20 @@ body {
 
 /* --------------------- Hide Hamburger on Desktop --------------------- */
 .hamburger {
-  /* display: none; */
-  font-size: 1.5rem;
-  background: none;
+  display: none;
+  color: var(--text);
+  background: var(--bg-alt);
   border: none;
+  font-size: 1.5rem;
   cursor: pointer;
+  border-radius: var(--radius);
+  padding: 0.2rem 0.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+/* Dark mode */
+[data-theme="dark"] .hamburger {
+  color: var(--text);
+  background: var(--bg-alt);
 }
 
 /* Desktop nav (flex horizontal) */
@@ -135,7 +144,7 @@ body {
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 560px) {
   .hamburger {
     display: block;
   }
@@ -150,6 +159,26 @@ body {
     width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav {
+    background: var(--bg-alt);
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .nav a, .nav button {
+    color: var(--text);
+    transition: color 0.3s, background 0.3s;
+  }
+
+  /* Dark mode */
+  [data-theme="dark"] .nav {
+    background: var(--bg-alt); /* dark mode background */
+  }
+
+  [data-theme="dark"] .nav a,
+  [data-theme="dark"] .nav button {
+    color: var(--text); /* dark mode text */
   }
 
   .nav ul {
