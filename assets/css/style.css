@@ -117,6 +117,58 @@ body {
   background: var(--bg-alt);
 }
 
+/* --------------------- Hide Hamburger on Desktop --------------------- */
+.hamburger {
+  /* display: none; */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Desktop nav (flex horizontal) */
+.nav ul {
+  display: flex;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none; /* hide menu by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav ul li a, .nav ul li button {
+    display: block;
+    padding: 0.8rem 1rem;
+    width: 100%;
+  }
+
+  /* Show menu when active */
+  .nav.active {
+    display: block;
+  }
+}
+
 /* Hero */
 .hero {
   background: linear-gradient(135deg, var(--accent), #073ea3);

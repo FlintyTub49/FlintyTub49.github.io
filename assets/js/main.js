@@ -155,5 +155,22 @@ if (list) {
 
   // Footer year
   document.getElementById('year').textContent=new Date().getFullYear();
+  
+  // Toggle mobile hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); // toggle the class that shows/hides the menu
+    });
+
+    // Optional: close menu when a nav link is clicked
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  }
 
 })();
