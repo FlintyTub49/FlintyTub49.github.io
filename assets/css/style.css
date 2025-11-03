@@ -311,6 +311,11 @@ body {
 .about-card {
   text-align: justify;
 }
+@media (max-width: 560px) {
+  .about-card {
+    text-align: left;
+  }
+}
 
 /* Grids */
 .skills-grid {
